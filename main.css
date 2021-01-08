@@ -4,17 +4,56 @@
     box-sizing: border-box;
     list-style: none;
 }
-.first{
-    height: 100vh;
-    background-image: url(./images/);
+.container{
+    height: 150vh;
+    background-image: url(./images/pexels-felix-mittermeier-956999.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
 }
+body{
+    height: 100%;
+    
+    
+}
+
+/* sections 
+.firstsec{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: url(./images/network-3537401_1920.jpg)no-repeat;
+    
+}
+
+.secondsec{
+    margin-top: -80px;
+    background: black;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+  
+}
+
+.thirdsec{
+    margin-top: -80px;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: tomato;
+}
+*/
+
+/* navbar */
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
     font-family: 'Poppins', sans-serif;
-    background-color: #49BCFF;
+    background-color: none;
 }
 
 .logo{
@@ -22,6 +61,7 @@ nav{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .nav-links{
@@ -42,7 +82,7 @@ nav{
     font-size: 14px;
 }
 .nav-links a:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(22, 183, 204);
 }
 
 .burger{
@@ -63,7 +103,7 @@ nav{
         width: 60%;
     }
 }
-@media screen and (max-width:631px){
+@media screen and (max-width:741px){
     body {
         overflow-x: hidden;
         position: relative;
@@ -116,7 +156,7 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-#content{
+.content{
     width: 100%;
 }
 .content h1{
@@ -125,15 +165,22 @@ nav{
     margin-bottom: 15px;
     color: white;
     margin: 20px;
+    text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
+.content img{
+    position: absolute;
+    margin-top: -200px;
+    width: 400px;
+}
 .content p{
     font-size: 25px;
     color: black;
     margin: 45px 0px 25px;
     font-style: italic;
+    text-align: center;
 }
+
 .btn.active,.btn:hover{
     background: linear-gradient(45deg,  #147da7, #18f7f7) ;
     transition: 0.5s;   
@@ -149,105 +196,29 @@ nav{
     box-shadow: 3px 8px 22px rgb(25, 211, 195);
     margin: 20px;
 }
-/* image-card*/
-.card{
-    position: relative;
-    width: 600px;
-    height: 350px;
-    margin: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 20px;
-    background: linear-gradient(45deg, #18f7f7, #147da7) ;
-}
 
-.card img{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 400px;
-    transition: 0.5s;
-}
 
-.card:hover img{
-    left: 73%;
-    height: 500px;
-}
-
-.card .content{
-    position: relative;
-    width: 50%;
-    left: 30%;
-    padding: 20px 20px 20px 40px;
-    opacity: 0;
-    visibility: hidden;
-    margin: 0px;
-    transition: 0.5s;
-}
-
-.card:hover .content{
-    opacity: 1;
-    visibility: visible;
-    left: 0%;
-} 
-
-.card .content h2{
-    color: white;
-    text-transform: uppercase;
-    font-size: 2.5em;
-    line-height: 1em;
-}
-
-.card .content p{
-    color: #fff;
-}
-
-.card .content a{
-    position: relative;
-    display: inline-block;
-    color: #111;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: #fff;
-    margin-top: 10px;
-    text-decoration: none;
-}
-
-@media (max-width: 991px) {
-    .card{
-        position: relative;
-        width: auto;
-        max-width: 600px;
-        transition: 0.5s;
-        align-items: flex-start;
+@media (max-width: 680px){
+    .content h1{
+        font-size: 40px;
     }
-    .card:hover{
-        height: 600px;
-    }
-    .card:hover img{
-        left: 50%;
-        height: 350px;
-    }
-    .card .content{
-        width: 100%;
-        left: 0;
-        padding: 40px;
-    }
-}
-
-@media (max-width: 420px){
-    .card .content{
-        padding: 30px;
-    }
-    .card:hover img{
-        height: 300px;
-        left: 62%;
+    .content p{
+        font-size: 16px;
     }
 
 }
-/* My skills*/
+.top{
+    color: rgb(226, 226,226);
+    padding-left: 40%;
+}
+
+.comet img{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+
+}
+/* My skills*
 
 .skills{
     width: 500px;

@@ -1,0 +1,144 @@
+@import url("./main.css");
+body{
+    background-image: url(./images/silver-955496_1920.jpg);
+    background-color: #f6f5f5;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a{
+    color: rgb(0, 0, 0);
+}
+
+.Heads h1{
+    font-size: 40px;
+    text-align: center;
+}
+.Heads h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    
+}
+.text-container p:nth-child(1) {
+    font-family: calibri;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 22px;
+
+}
+.text-container p:nth-child(2){
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1a1a1a;
+    font-size: 60px;
+}
+
+.text-container p:nth-child(3){
+    font-family: myriad pro regular;
+    color: #403e3e;
+    font-size: 30px;
+    line-height: 30px;
+}
+.text-container p{
+    line-height: 0px;
+    margin: 45px 0px 25px;
+}
+
+.text-container{
+    position: absolute;
+    left: 13%;
+    top: 42%;
+    transform: translate(-13%,-42%);
+}
+.text-container button{
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+}
+.hire-btn{
+    border: 2px solid #373636;
+    color: #373636;
+}
+.down-cv{
+    background-color: #0b0b0b;
+    color: #FFFFFF;
+    border: none;
+}
+button:active{
+    transform: scale(1.1);
+
+}
+
+.bod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#9c9c9c,#242324);
+
+}
+
+.card img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+.card:hover img{
+    left: 80%;
+    height: 500px;
+}
+
+.card .more{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .more{
+    opacity: 1;
+    visibility: visible;
+    left: 0%;
+}
+
+.secondsec{
+    height: 100vh;
+    background-image: none;
+    background-color: #f6f5f5;
+}
+
+.secondsec h2{
+    font-size: 50px;
+
+}
+.secondsec p{
+    font-size: 18px;
+}
