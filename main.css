@@ -19,32 +19,8 @@ body{
     
 }
 
-/* sections 
-.firstsec{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100vh;
-    background: url(./images/network-3537401_1920.jpg)no-repeat;
-    
-}
 
-.secondsec{
-    margin-top: -80px;
-    background: black;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100vh;
-  
-}
 
-.thirdsec{
-    margin-top: -80px;
-    box-sizing: border-box;
-    height: 100vh;
-    background-color: tomato;
-}
-*/
 
 /* navbar */
 nav{
@@ -112,7 +88,7 @@ nav{
         position: absolute;
         right: 0px;
         height: 92vh;
-        top: 8vh;
+        top: 15vh;
         background-color: #49BCFF;
         display: flex;
         flex-direction: column;
@@ -120,6 +96,7 @@ nav{
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 5;
     }
     .nav-links li{
         opacity: 1;

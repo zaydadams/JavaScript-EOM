@@ -22,3 +22,10 @@ const app = ()=>{
 }
 
 navSlide();
+
+
+//image
+
+function onClick(element) {
+    document.getElementById
+}
