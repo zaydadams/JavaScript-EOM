@@ -6,7 +6,7 @@
 }
 .container{
     height: 150vh;
-    background-image: url(./images/pexels-felix-mittermeier-956999.jpg);
+    background-image: url(./images/galaxy-3608029_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -218,7 +218,7 @@ nav{
     position: fixed;
 
 }
-/* My skills*
+/*My skills
 
 .skills{
     width: 500px;

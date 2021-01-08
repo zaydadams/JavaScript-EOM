@@ -1,6 +1,6 @@
 @import url("./main.css");
 body{
-    background-image: url(./images/silver-955496_1920.jpg);
+    
     background-color: #f6f5f5;
     margin: 0;
     padding: 0;
@@ -18,11 +18,25 @@ body{
     text-align: center;
 }
 
-section{
+.firstsec{
+    background-image: url(./images/silver-955496_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 95vh;
+    height: 120vh;
     position: relative;
     
+}
+
+@media (max-width: 1280px){
+    .firstsec{
+        height: 60vh;
+    }
+}
+@media (max-width: 1990px){
+    .firstsec{
+        height: 60vh;
+    }
 }
 .text-container p:nth-child(1) {
     font-family: calibri;
@@ -80,23 +94,17 @@ button:active{
 
 }
 
-.bod{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
 .card{
     position: relative;
-    width: 600px;
-    height: 350px;
+    width: 500px;
+    height: 300px;
     margin: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     border-radius: 20px;
     background: linear-gradient(135deg,#9c9c9c,#242324);
+    left: 25%;
 
 }
 
@@ -105,12 +113,13 @@ button:active{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    height: 400px;
+    height: 300px;
     transition: 0.5s;
+    
 }
 .card:hover img{
-    left: 80%;
-    height: 500px;
+    left: 70%;
+    height: 400px;
 }
 
 .card .more{
@@ -129,16 +138,175 @@ button:active{
     left: 0%;
 }
 
-.secondsec{
+.card .more h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+.card .more p{
+    color: #fff;
+    font-size: 1em;
+}
+.card .more a{
+    position: relative;
+    display: inline-block;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+@media (max-width:991px){
+    .card{
+        position: relative;
+        width: auto;
+        max-width: 400px;
+        align-items: flex-start;
+    }
+    .card:hover{
+        height: 600px;
+    }
+    .card:hover img{
+        left: 50%;
+        height: 350px;
+    }
+    .card .more{
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+}
+@media (max-width: 570px){
+    .card{
+        left: 1%;
+    }
+    .card .more{
+        padding: 30px;
+    }
+    .card:hover img{
+        height: 300px;
+    }
+
+}
+
+.thirdsec{
+    background-color: #403e3e;
+    height: 120vh;
+    
+}
+.blockk{
+    width: 50%;
+    padding: 8px;
+}
+.blockk img{
+    float: left;
+    width: 200px;
+    padding: 0 10px 0 0;
+    
+}
+.para p{
+    display: inline;
+    text-align: justify;
+    font-size: 20px;
+    
+}
+@media (max-width: 200px){
+    .secondsec{
+        height: 100%;
+    }
+}
+@media (max-width: 300px ){
+    .para p{
+        font-size: 10px;
+        color: blue;
+    }
+}
+.fourthsec{
+    
+    width: 100%;
     height: 100vh;
-    background-image: none;
-    background-color: #f6f5f5;
+    margin-top: 0;
+}
+.skills{
+    width: 500px;
+    margin: 60px auto;
+    color: rgb(5, 4, 4);
+    text-transform: uppercase;
 }
 
-.secondsec h2{
-    font-size: 50px;
-
+.skills li{
+    margin: 20px 0;
 }
-.secondsec p{
-    font-size: 18px;
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{
+    height: 2px;
+    float: left;
+    background: linear-gradient(45deg, #18f7f7, #147da7);
+}
+
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+
+.css{
+    width: 60%;
+    animation: css 3s;
+}
+
+.javascript{
+    width: 40%;
+    animation: javascript 3s;
+}
+
+.Python{
+    width: 40%;
+    animation: Python 3s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes Python {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
 }
