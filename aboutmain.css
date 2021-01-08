@@ -8,14 +8,10 @@ body{
 .nav-links a{
     color: rgb(0, 0, 0);
 }
-
-.Heads h1{
-    font-size: 40px;
-    text-align: center;
-}
-.Heads h3{
-    font-size: 20px;
-    text-align: center;
+@media (min-width: 1680px){
+    .nav-links a{
+        font-size: 30px;
+    }
 }
 
 .firstsec{
@@ -28,16 +24,8 @@ body{
     
 }
 
-@media (max-width: 1280px){
-    .firstsec{
-        height: 60vh;
-    }
-}
-@media (max-width: 1990px){
-    .firstsec{
-        height: 60vh;
-    }
-}
+
+
 .text-container p:nth-child(1) {
     font-family: calibri;
     font-weight: bold;
@@ -93,10 +81,66 @@ button:active{
     transform: scale(1.1);
 
 }
+.social-l img{
+    width: 80px;
+    margin-top: 500px;
+    align-items: center;
+}
+@media (min-width: 1280px){
+    .text-container p:nth-child(1) {
+        font-size: 70px;
+        color: white;
+    
+    }
+    .text-container p:nth-child(2){
+        
+        font-size: 90px;
+        line-height: 1;
+    }
+    
+    .text-container p:nth-child(3){
+        color: white;
+    }
+    .text-container p{
+        line-height: 0px;
+        margin: 45px 0px 25px;
+    }
+    
+    .text-container{
+        position: absolute;
+        left: 13%;
+        top: 42%;
+        transform: translate(-13%,-42%);
+    }
+    .text-container button{
+        width: 130px;
+        height: 42px;
+        border-radius: 10px;
+        font-family: calibri;
+        font-weight: bold;
+        font-size: 14px;
+        outline: none;
+        margin: 0px 10px;
+    }
+    .hire-btn{
+        border: 2px solid #373636;
+        color: #373636;
+    }
+    .down-cv{
+        background-color: #0b0b0b;
+        color: #FFFFFF;
+        border: none;
+    }
+    button:active{
+        transform: scale(1.1);
+    
+
+}
+}
 
 .card{
     position: relative;
-    width: 500px;
+    width: 600px;
     height: 300px;
     margin: 20px;
     display: flex;
@@ -193,7 +237,10 @@ button:active{
 }
 
 .thirdsec{
+    position: relative;
     background-color: #403e3e;
+    width: 100%;
+    padding: 50px;
     height: 120vh;
     
 }
@@ -207,10 +254,15 @@ button:active{
     padding: 0 10px 0 0;
     
 }
+.para h2{
+    color: white;
+    font-size: 40px;
+}
 .para p{
     display: inline;
     text-align: justify;
     font-size: 20px;
+    color: white;
     
 }
 @media (max-width: 200px){
@@ -219,9 +271,13 @@ button:active{
     }
 }
 @media (max-width: 300px ){
+    .blockk img{
+        visibility: hidden;
+    }
     .para p{
         font-size: 10px;
-        color: blue;
+        text-align: right;
+        margin-top: 20px;
     }
 }
 .fourthsec{
@@ -229,6 +285,7 @@ button:active{
     width: 100%;
     height: 100vh;
     margin-top: 0;
+    background-color: #6d6d6d;
 }
 .skills{
     width: 500px;
@@ -244,7 +301,7 @@ button:active{
 .bar{
     background: #353b48;
     display: block;
-    height: 5px;
+    height: 10px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 3px;
     overflow: hidden;
@@ -252,9 +309,9 @@ button:active{
 }
 
 .bar span{
-    height: 2px;
+    height: 10px;
     float: left;
-    background: linear-gradient(45deg, #18f7f7, #147da7);
+    background: red;
 }
 
 .html{
