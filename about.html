@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="stylesheet" href="aboutmain.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Aboutme</title>
 </head>
 <body>
@@ -66,7 +67,7 @@
     </section>
     <section class="fourthsec">
         <div class="skills">
-            <h1>My Skills</h1>
+            <h1>My Skills</h1><br>
         <li>
             <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
         </li>
@@ -94,7 +95,7 @@
                 <button>python</button>
             </div>
             <div class="product">
-                <div class="itembox" data-att="web dev"><img src="/images/jscalculator.png" alt=""></div>
+                <div class="itembox" data-att="web dev"><a href="https://zaycalculator.netlify.app"><img src="/images/jscalculator.png" alt=""></a></div>
                 <div class="itembox" data-att="web dev"><img src="/images/swegga.png" alt=""></div>
                 <div class="itembox" data-att="web dev"><img src="/images/website.png" alt=""></div>
                 <div class="itembox" data-att="python"><img src="/images/currencycon.png" alt=""></div>
@@ -106,52 +107,60 @@
     </section>
     <section class="sixthsec">
         <div class="testimonials">
-            <div class="inner">
-                <h1>Testimonials</h1>
-                <div class="border"></div>
-
-                <div class="row">
-                    <div class="col">
-                        <div class="testimonial">
-                            <img src="/images/Shane Kolkoto (4).JPG">
-                            <div class="name">Shane Kolkoto</div>
-                            <p>He is such a talented person,theres never
-                                a dull moment when he's around. He takes his work very serious
-                            </p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="cards">
+                          <div class="layer"></div>
+                          <div class="contents">
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A soluta delectus nisi harum saepe eius? Nesciunt voluptatibus, quisquam eius quaerat dolore aut! Non maxime, est molestiae dolorum ex optio corrupti?</p>
+                              <div class="imgBOX">
+                                  <img src="./images/Shane Kolkoto (4).JPG">
+                              </div>
+                              <div class="detail">
+                                  <h2>Shane Kolkoto<br><span>Web developer student</span></h2>
+                              </div> 
+                          </div>
+                      </div>
+                  </div>
+                      <div class="swiper-slide">
+                        <div class="cards">
+                            <div class="layer"></div>
+                            <div class="contents">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A soluta delectus nisi harum saepe eius? Nesciunt voluptatibus, quisquam eius quaerat dolore aut! Non maxime, est molestiae dolorum ex optio corrupti?</p>
+                                <div class="imgBOX">
+                                    <img src="./images/Shane Kolkoto (4).JPG">
+                                </div>
+                                <div class="detail">
+                                    <h2>Shane Kolkoto<br><span>Web developer student</span></h2>
+                                </div> 
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="testimonial">
-                            <img src="/images/Shane Kolkoto (4).JPG">
-                            <div class="name">full name</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsam enim neque deleniti quis unde incidunt blanditiis, iste vitae natus doloremque eveniet ut recusandae similique qui voluptates facilis. Odio, ipsam?</p>
+                    <div class="swiper-slide">
+                        <div class="cards">
+                            <div class="layer"></div>
+                            <div class="contents">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A soluta delectus nisi harum saepe eius? Nesciunt voluptatibus, quisquam eius quaerat dolore aut! Non maxime, est molestiae dolorum ex optio corrupti?</p>
+                                <div class="imgBOX">
+                                    <img src="./images/Shane Kolkoto (4).JPG">
+                                </div>
+                                <div class="detail">
+                                    <h2>Shane Kolkoto<br><span>Web developer student</span></h2>
+                                </div> 
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="testimonial">
-                            <img src="/images/Shane Kolkoto (4).JPG">
-                            <div class="name">full name</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsam enim neque deleniti quis unde incidunt blanditiis, iste vitae natus doloremque eveniet ut recusandae similique qui voluptates facilis. Odio, ipsam?</p>
-                        </div>
-                    </div>
+                  </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <p>Going to Internet</p>
-            <p>check my social links for more</p>
-            <div class="social-icons">
-
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-
-            </div>
-            <p> Copyright by Zay</p>
-        </footer>
-      
+   
     </section>
+    
     <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/main.js"></script>
+    
 </body>
 </html>

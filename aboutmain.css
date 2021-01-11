@@ -312,16 +312,27 @@ button:active{
 
 .fourthsec{
     
+    position: relative;
+    background-color: #6d6d6d;;
     width: 100%;
+    padding: 50px;
     height: 100vh;
-    margin-top: 0;
-    background-color: #6d6d6d;
+    
 }
 .skills{
-    width: 500px;
-    margin: 60px auto;
-    color: rgb(5, 4, 4);
-    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    
+    transition: .5s;
+}
     
 }
 
@@ -448,9 +459,14 @@ div.category button{
 }
 
 @media only screen and (max-width: 659px){
+    .fifthsec{
+        height: 130vh;
+    }
+    .product div img{
+    }
     div.category {
-        display: flex;
-        flex-direction: column;
+        display: inline-block;
+
     }
 
     div.category button{
@@ -465,101 +481,97 @@ div.category button{
     }
 }
 
-
-
 .sixthsec{
-    width: 100%;
-    height: 100vh;
-    margin-top: 0;
-    background-color: #6d6d6d;;  
-}
-.testimonials{
-    padding: 40px 0;
-    background: #f1f1f1;
-    color: #434343;
-    text-align: center;
-
-}
-
-.inner{
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
-}
-.border{
-    width: 160px;
-    height: 5px;
-    background: #6ab04c;
-    margin: 26px auto;
-}
-
-.row{
+    
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.col{
-    flex: 33.33%;
-    max-width: 33.33%;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
     box-sizing: border-box;
-    padding: 15px;
+    
 }
 
-.testimonial{
+.testimonials{
+    position: relative;
+    max-width: 100%;
+    -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009)
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    min-height: 350px;
+    margin: 0 20px;
     background: #fff;
-    padding: 30px;
+
+  }
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right{
+    background-image: none;
+}
+.testimonials .cards{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    margin: 0 20px;
+    background: #333;
+    padding: 60px 40px;
+    text-align: center;
+    overflow: hidden;
 }
 
-.testimonial img{
+.testimonials .cards .layer{
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#03a9f4, #e91ee3);
+    z-index: 1;
+    transition: 0.5s;
+}
+.testimonials .cards:hover .layer{
+    top: 0;
+}
+.testimonials .cards .contents{
+    position: relative;
+    z-index: 2;
+}
+.testimonials .cards .contents p{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.testimonials .cards .contents img{
+    width: 100%;
+
+}
+.testimonials .cards .contents .imgBOX{
     width: 100px;
     height: 100px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0,0.2);
 }
-
-.name{
-    font-size: 20px;
-    text-transform: uppercase;
-    margin: 20px 0;
+.testimonials .cards .contents h2{
+    font-size: 18px;
+    color: #fff;
 }
-
-@media screen and (max-width: 960px){
-    .col{
-        flex: 100%;
-        max-width: 80%;
-        
+.testimonials .cards .contents h2 span{
+    color: #03a9f4;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.testimonials .cards:hover .contents h2 span{
+    color: #fff;
+} 
+@media (max-width: 400px){
+    .testimonials .cards .contents p{
+        font-size: 3;
     }
+    .
 }
-@media screen and (max-width: 600px){
-    .col{
-        flex: 100%;
-        max-width: 100%;
-        overflow: hidden;
-    }
-}
-
-footer{
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-footer p{
-    font-family: calibri;
-}
-
-footer p:nth-child(1){
-    font-weight: bold;
-    color: #191919;
-    line-height: 10px;
-}
-
-footer p:nth-child(2){
-    font-size: 16px;
-    color: #7e7d7d;
-    width: 600px;
-    text-align: center;
-}
-
