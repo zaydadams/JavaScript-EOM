@@ -291,6 +291,13 @@ button:active{
     position: relative;
 }
 
+@media (max-width: 1991px){
+    .box{
+        width: 1000px;
+        height: 500px;
+    }
+}
+
 @media (max-width: 685px){
     .box{
         position: relative;
@@ -409,6 +416,12 @@ button:active{
         width: 40%;
     }
 }
+@media (max-width: 1991px){
+    .skills{
+        width: 1000px;
+        height: 400px;
+    }
+}
 @media (max-width: 590px){
     .skills{
         width: 350px;
@@ -468,11 +481,14 @@ div.category button{
     cursor: pointer;
 }
 
+@media (max-width: 1991px){
+    .itembox img{
+        width: 300px;
+    }
+}
 @media only screen and (max-width: 659px){
     .fifthsec{
         height: 130vh;
-    }
-    .product div img{
     }
     div.category {
         display: inline-block;
