@@ -490,6 +490,9 @@ div.category button{
     .fifthsec{
         height: 130vh;
     }
+    div.itembox img{
+        width: 100%;
+    }
     div.category {
         display: inline-block;
 
@@ -596,8 +599,14 @@ div.category button{
     color: #fff;
 } 
 @media (max-width: 400px){
+    .testimonials .cards{
+        width: 200px;
+        height: 320px;
+    }
     .testimonials .cards .contents p{
-        font-size: 3;
+        font-size: 10px;
+        margin-top: 0%;
+        padding: 0%;
     }
 }
 
