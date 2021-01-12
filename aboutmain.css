@@ -288,6 +288,7 @@ button:active{
     margin: 0;
     padding: 10px 0 0;
     text-emphasis: justify;
+    position: relative;
 }
 
 @media (max-width: 685px){
@@ -299,13 +300,13 @@ button:active{
     }
 
 }
-@media (max-width: 420px){
+@media (max-width: 360px){
     .box{
-        width: 300px;
+        width: 311px;
         
     }
     .box .imgBx img{
-        max-width: 50px;
+        width: 50px;
         
     }
 }
@@ -333,8 +334,6 @@ button:active{
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
     
     transition: .5s;
-}
-    
 }
 
 .skills li{
@@ -408,6 +407,16 @@ button:active{
     }
     100%{
         width: 40%;
+    }
+}
+@media (max-width: 590px){
+    .skills{
+        width: 350px;
+    }
+}
+@media (max-width: 390px){
+    .skills{
+        width: 270px;
     }
 }
 
@@ -529,7 +538,7 @@ div.category button{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#03a9f4, #e91ee3);
+    background: linear-gradient(45deg, #18f7f7, #147da7);
     z-index: 1;
     transition: 0.5s;
 }
@@ -574,5 +583,96 @@ div.category button{
     .testimonials .cards .contents p{
         font-size: 3;
     }
-    .
+}
+
+.seventhsec{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contained{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: 0px 0px 20px #000010;
+    background-color: #03a9f4;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(120, 120, 120, 0.199);
+    margin-top: 5px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    color:#000000;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease;
+}
+
+button[type="submit"]:hover{
+    background-color: #cae3ee;
+}
+
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+
+}
+
+#status.success{
+    background-color: greenyellow;
+    animation: status ease forwards;
+}
+#status.error{
+    background-color: red;
+    color: white;
+    animation: status ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: all;
+    }
 }
