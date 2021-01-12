@@ -38,7 +38,7 @@ btn.forEach(item => {
             show.style.display = "none";
             let products=item.textContent.toLowerCase();
             if(show.getAttribute("data-att")===
-            products || products ==="web-dev"){
+            products || products ==="all"){
                 show.style.display = "block";
             }
         })
