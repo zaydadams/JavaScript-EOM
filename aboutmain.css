@@ -20,6 +20,7 @@ body{
     background-size: cover;
     height: 100vh;
     position: relative;
+    box-sizing: border-box;
     
 }
 
@@ -214,7 +215,7 @@ button:active{
         height: 600px;
     }
     .card:hover img{
-        left: 50%;
+        left: 68%;
         height: 350px;
     }
     .card .more{
@@ -238,10 +239,10 @@ button:active{
 
 .thirdsec{
     position: relative;
-    background-color: #6d6d6d;;
     width: 100%;
-    padding: 50px;
+    padding: 0px;
     height: 100vh;
+    box-sizing: border-box;
     
 }
 
@@ -264,12 +265,12 @@ button:active{
     box-shadow: 0 15px 30px rgba(0,0,0,.5);
 }
 
-.box .imgBx{
+.box .imgboox{
     width: 150px;
     flex: 0 0 150px;
 }
 
-.box .imgBx img{
+.box .imgboox img{
     
     max-width: 100%;
 
@@ -294,7 +295,7 @@ button:active{
 @media (max-width: 1991px){
     .box{
         width: 1000px;
-        height: 500px;
+        height: 67%;
     }
 }
 
@@ -312,9 +313,14 @@ button:active{
         width: 311px;
         
     }
-    .box .imgBx img{
-        width: 50px;
+    .box img{
+        width: 100px;
+        height: 100px;
         
+    }
+    .box .p{
+        font-size: 100px
+        ;
     }
 }
 
@@ -322,10 +328,10 @@ button:active{
 .fourthsec{
     
     position: relative;
-    background-color: #6d6d6d;;
     width: 100%;
     padding: 50px;
     height: 100vh;
+    box-sizing: border-box;
     
 }
 .skills{
@@ -365,22 +371,22 @@ button:active{
 
 .html{
     width: 90%;
-    animation: html 3s;
+    animation: html 6s;
 }
 
 .css{
     width: 60%;
-    animation: css 3s;
+    animation: css 6s;
 }
 
 .javascript{
     width: 40%;
-    animation: javascript 3s;
+    animation: javascript 6s;
 }
 
 .Python{
     width: 40%;
-    animation: Python 3s;
+    animation: Python 6s;
 }
 
 @keyframes html {
@@ -435,7 +441,6 @@ button:active{
 
 .fifthsec{
     font-family: Arial;
-    background-color: #6d6d6d;;
     height: 120vh;
     box-sizing: border-box;
 }
@@ -488,7 +493,7 @@ div.category button{
 }
 @media only screen and (max-width: 1672px){
     .fifthsec{
-        height: 130vh;
+        height: 151vh;
     }
     .product div img{
         width: 200px;
@@ -536,7 +541,6 @@ div.category button{
     width: 350px;
     min-height: 350px;
     margin: 0 20px;
-    background: #fff;
 
   }
 
@@ -568,6 +572,7 @@ div.category button{
 .testimonials .cards:hover .layer{
     top: 0;
 }
+
 .testimonials .cards .contents{
     position: relative;
     z-index: 2;
@@ -604,13 +609,13 @@ div.category button{
 } 
 @media (max-width: 400px){
     .testimonials .cards{
-        width: 346px;
-        height: 350px;
-        left: -4%;
+        width: 307px;
+        height: 399px;
+        left: -5%;
     }
     .testimonials .cards .contents p{
         font-size: 10px;
-        margin-top: -49%;
+        margin-top: -50%;
         padding: 0%;
     }
 }
@@ -618,11 +623,11 @@ div.category button{
 .seventhsec{
     height: 100%;
     width: 100%;
-    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box;
 }
 .contained{
     width: 90%;
@@ -630,7 +635,7 @@ div.category button{
     margin: 0 auto;
     padding: 20px;
     box-sizing: 0px 0px 20px #000010;
-    background-color: #03a9f4;
+    background-color:  rgba(114, 114, 114);
     border-radius: 8px;
     margin-bottom: 20px;
 }
@@ -708,7 +713,7 @@ button[type="submit"]:hover{
 }
 
 footer{
-    background-color: #03a9f4;
+    background-color:  rgba(114, 114, 114);
 }
 footer img{
     width: 100px;

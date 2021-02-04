@@ -106,3 +106,13 @@ var swiper = new Swiper('.swiper-container', {
     };
     xhr.send(data);
   }
+
+  $(document).ready(function () {
+    $(window).scroll(function (){
+      if (this.scrollY > 20){
+        $(".navbar").addClass("sticky");
+      } else{
+        $(".navbar").removeClass("sticky")
+      }
+    });
+  })
