@@ -610,12 +610,12 @@ div.category button{
 @media (max-width: 400px){
     .testimonials .cards{
         width: 307px;
-        height: 399px;
+        height: 444px;
         left: -5%;
     }
     .testimonials .cards .contents p{
         font-size: 10px;
-        margin-top: -50%;
+        margin-top: -26%;
         padding: 0%;
     }
 }
