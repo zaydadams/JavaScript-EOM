@@ -5,7 +5,7 @@
     list-style: none;
 }
 .container{
-    height: 150vh;
+    height: 944px;
     background-image: url(./images/galaxy-3608029_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -190,7 +190,7 @@ nav{
 }
 .comet img{
     width: 80px;
-    animation: comet 7s linear infinite;
+    animation: comet 4s linear infinite;
     
     
 }
@@ -201,12 +201,14 @@ nav{
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    top: -50px;
+    top: 0px;
+    box-sizing: border-box;
+    justify-content: flex-end;
     
 }
 @keyframes comet {
     0%{
-        transform: translateY(0) rotate(10deg);
+        transform: translateY(0);
         
         
         opacity: 4;
@@ -215,12 +217,10 @@ nav{
         opacity: 4;
     }
     70%{
-        opacity: 4;
+        opacity: 2;
     }
     100%{
-        transform: translateY(200vh) translateX(-200vh) rotate(10deg);
-        
-
+        transform: translateY(100vh) translateX(-200vh) rotate(10deg);
         opacity: 0;
     }
 
@@ -228,13 +228,12 @@ nav{
 
 
 .comet img:nth-child(1){
-    animation-delay: 1s;
+    animation-delay: 0s;
     
     
 }
 .comet img:nth-child(2){
-    animation-delay: 5s;
-    
+    animation-delay: 2s;
     
 }
 
