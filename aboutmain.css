@@ -246,6 +246,12 @@ button:active{
     
 }
 
+.sk h1{
+    font-size: 50px;
+    color: grey;
+    padding-left: 850px;
+
+}
 .box{
     position: relative;
     top: 50%;
@@ -324,6 +330,29 @@ button:active{
     }
 }
 
+.educ h1{
+    font-size: 50px;
+    color: grey;
+    padding-left: 850px;
+    position: relative;
+}
+
+.cv{
+    position: relative;
+    padding-left: 850px;
+    padding-top: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    transition: .5s;
+
+}
 
 .fourthsec{
     
@@ -437,6 +466,12 @@ button:active{
     .skills{
         width: 270px;
     }
+}
+
+.moreSkills h1{
+    font-size: 50px;
+    padding: 10px;
+    margin-bottom: 200px;
 }
 
 .fifthsec{
