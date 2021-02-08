@@ -208,7 +208,7 @@ nav{
 }
 @keyframes comet {
     0%{
-        transform: translateY(0);
+        transform: translateY(0) rotate(20deg);
         
         
         opacity: 4;
@@ -220,7 +220,7 @@ nav{
         opacity: 2;
     }
     100%{
-        transform: translateY(100vh) translateX(-200vh) rotate(10deg);
+        transform: translateY(90vh) translateX(-300vh) rotate(20deg);
         opacity: 0;
     }
 

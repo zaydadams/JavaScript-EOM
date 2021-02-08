@@ -250,84 +250,7 @@ button:active{
     font-size: 50px;
     color: grey;
     padding-left: 850px;
-
-}
-.box{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 600px;
-    padding: 20px;
-    box-sizing: border-box;
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    display: flex;
-    transition: .5s;
-}
-
-.box:hover{
-    box-shadow: 0 15px 30px rgba(0,0,0,.5);
-}
-
-.box .imgboox{
-    width: 150px;
-    flex: 0 0 150px;
-}
-
-.box .imgboox img{
-    
-    max-width: 100%;
-
-}
-.box .content{
-    padding-left: 20px;
-}
-.box .content h2{
     margin: 0;
-    padding-left: 0;
-    color: chocolate;
-    font-size: 22px;
-}
-
-.box .content p{
-    margin: 0;
-    padding: 10px 0 0;
-    text-emphasis: justify;
-    position: relative;
-}
-
-@media (max-width: 1991px){
-    .box{
-        width: 1000px;
-        height: 67%;
-    }
-}
-
-@media (max-width: 685px){
-    .box{
-        position: relative;
-        top: 50%;
-        left: 50%;
-        width: 400px;
-    }
-
-}
-@media (max-width: 360px){
-    .box{
-        width: 311px;
-        
-    }
-    .box img{
-        width: 100px;
-        height: 100px;
-        
-    }
-    .box .p{
-        font-size: 100px
-        ;
-    }
 }
 
 .educ h1{
@@ -339,19 +262,23 @@ button:active{
 
 .cv{
     position: relative;
-    padding-left: 850px;
-    padding-top: 80px;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    left: 33%;
     width: 600px;
     padding: 20px;
     box-sizing: border-box;
-    background: #fff;
+    background: grey;
     border-radius: 4px;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    transition: .5s;
+    
 
+}
+
+.cv h1{
+    font-size: 20px;
+}
+.cv h3{
+    font-size: 25px;
 }
 
 .fourthsec{
@@ -380,8 +307,16 @@ button:active{
 
 .skills li{
     margin: 20px 0;
+    
 }
 
+.skills{
+    color: grey;
+}
+.skills h1{
+    color: black;
+    font-size: 50px;
+}
 .bar{
     background: #353b48;
     display: block;
@@ -395,7 +330,7 @@ button:active{
 .bar span{
     height: 10px;
     float: left;
-    background: red;
+    background: blue;
 }
 
 .html{
