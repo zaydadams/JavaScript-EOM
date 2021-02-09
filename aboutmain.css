@@ -247,53 +247,172 @@ button:active{
 }
 
 .sk h1{
-    font-size: 50px;
+    font-size: 80px;
     color: grey;
-    padding-left: 850px;
+    padding-left: 80px;
     margin: 0;
 }
 
-.educ h1{
-    font-size: 50px;
-    color: grey;
-    padding-left: 850px;
-    
-}
-
-.cv{
-    position: relative;
-    top: 50%;
-    left: 33%;
-    width: 600px;
-    padding: 20px;
-    box-sizing: border-box;
-    background: grey;
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    
-
-}
-
-.cv h1{
-    font-size: 20px;
-}
-.cv h3{
-    font-size: 25px;
-}
 
 .fourthsec{
     
     position: relative;
-    width: 100%;
-    padding: 50px;
-    height: 100vh;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    min-height: 100vh;
+    background: #350048;
+    
     
 }
+.fourthsec::before{
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #bd00ff;
+}
+.container{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.container .carding{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    z-index: 10;
+    margin: 20px 20px 60px;
+    transition: 0.5s;
+}
+
+.container .carding .boxing{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0.0.0.0.5);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.1);
+    z-index: 10;
+    border-radius: 10px;
+
+}
+
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 10;
+}
+.percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.percent .number h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+}
+.percent .number h2 span{
+    font-size: 24px;
+}
+.text{
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 30px 20px 10px;
+    background-attachment: #f00;
+    border-radius: 10px;
+    font-weight: 800px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    z-index: 1;
+    pointer-events: none;
+    transition: bottom 0.5s, z-index 0s, transform 0.5s, padding 0.5s;
+    transition-delay: 0.5s,0.5s,0.5s,0.5s;
+    color: #fff;
+}
+.carding:hover .text{
+    transition-delay: 0s,0.5s,0.5,0s;
+    bottom: -70px;
+    z-index: 11;
+    transform: translateX(-50%) translateY(-50px);
+    padding: 30px 20px 10px;
+
+}
+.carding:nth-child(1) .text{
+    background: #ff0461;
+}
+.carding:nth-child(2) .text{
+    background: chartreuse;
+
+}
+.carding:nth-child(3) .text{
+    background: cornflowerblue;
+
+}
+.carding:nth-child(4) .text{
+    background: darkblue;
+
+}
+.carding:nth-child(5) .text{
+    background: darkgoldenrod;
+
+}
+.carding:nth-child(6) .text{
+    background: darkgreen;
+
+}
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    
+}
+
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(255,255,255,0.5);
+    transform: translate(5px,5px);
+    stroke-linecap: round;
+
+}
+svg circle:nth-child(2){
+    stroke: #fff;
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 80px;
+}
+/* 
 .skills{
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 34%;
     transform: translate(-50%,-50%);
     width: 600px;
     padding: 20px;
@@ -304,7 +423,7 @@ button:active{
     
     transition: .5s;
 }
-
+ 
 .skills li{
     margin: 20px 0;
     
@@ -408,6 +527,40 @@ button:active{
     padding: 10px;
     margin-bottom: 200px;
 }
+.educ h1{
+    font-size: 80px;
+    color: grey;
+    padding-left: 850px;
+    
+}
+*/
+.cv{
+    position: relative;
+    top: 50%;
+    left: 4%;
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: grey;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    
+
+}
+
+.cv h1{
+    font-size: 20px;
+}
+.cv h3{
+    font-size: 30px;
+}
+
+@media (max-width: 320px){
+    .cv{
+        left: 10%;
+
+    }
+}
 
 .fifthsec{
     font-family: Arial;
@@ -429,6 +582,10 @@ div.category button{
     cursor: pointer;
     border-radius: 10px;
     background-color: rgba(223, 223, 223);
+}
+.services h1{
+    font-size: 40px;
+    font-family: fantasy;
 }
 
 .div.category button.active{
