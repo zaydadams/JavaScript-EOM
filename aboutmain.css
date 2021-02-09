@@ -209,7 +209,13 @@ button:active{
     text-decoration: none;
 }
 
-@media (max-width:991px){
+@media (max-width: 1900px){
+    .card{
+        width: 1500px;
+        left: 10%;
+    }
+}
+@media (max-width:1280px){
     .card{
         position: relative;
         width: auto;
@@ -231,7 +237,7 @@ button:active{
 }
 @media (max-width: 570px){
     .card{
-        left: 1%;
+        left: 12%;
     }
     .card .more{
         padding: 30px;
@@ -439,132 +445,7 @@ svg circle:nth-child(2){
 .carding:nth-child(6) svg circle:nth-child(2){
     stroke-dashoffset: calc(440px - (440px * 50) / 100);
 }
-/* 
-.skills{
-    position: relative;
-    top: 50%;
-    left: 34%;
-    transform: translate(-50%,-50%);
-    width: 600px;
-    padding: 20px;
-    box-sizing: border-box;
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    
-    transition: .5s;
-}
- 
-.skills li{
-    margin: 20px 0;
-    
-}
 
-.skills{
-    color: grey;
-}
-.skills h1{
-    color: black;
-    font-size: 50px;
-}
-.bar{
-    background: #353b48;
-    display: block;
-    height: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    overflow: hidden;
-    box-shadow: 0 0 10px #2187e7b3;
-}
-
-.bar span{
-    height: 10px;
-    float: left;
-    background: blue;
-}
-
-.html{
-    width: 90%;
-    animation: html 6s;
-}
-
-.css{
-    width: 60%;
-    animation: css 6s;
-}
-
-.javascript{
-    width: 40%;
-    animation: javascript 6s;
-}
-
-.Python{
-    width: 40%;
-    animation: Python 6s;
-}
-
-@keyframes html {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90%;
-    }
-}
-
-@keyframes css {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 60%;
-    }
-}
-@keyframes javascript {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 40%;
-    }
-}
-@keyframes Python {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 40%;
-    }
-}
-@media (max-width: 1991px){
-    .skills{
-        width: 1000px;
-        height: 400px;
-    }
-}
-@media (max-width: 590px){
-    .skills{
-        width: 350px;
-    }
-}
-@media (max-width: 390px){
-    .skills{
-        width: 270px;
-    }
-}
-
-.moreSkills h1{
-    font-size: 50px;
-    padding: 10px;
-    margin-bottom: 200px;
-}
-.educ h1{
-    font-size: 80px;
-    color: grey;
-    padding-left: 850px;
-    
-}
-*/
 .cv{
     position: relative;
     top: 50%;
