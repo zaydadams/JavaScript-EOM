@@ -123,20 +123,7 @@ button:active{
         outline: none;
         margin: 0px 10px;
     }
-    .hire-btn{
-        border: 2px solid #373636;
-        color: #373636;
-    }
-    .down-cv{
-        background-color: #0b0b0b;
-        color: #FFFFFF;
-        border: none;
-    }
-    button:active{
-        transform: scale(1.1);
-    }
 }
-
 .secondsec{
     background-color: #000000;
     margin: 0px;
@@ -228,7 +215,17 @@ button:active{
         left: 5%;
     }
 }
-@media (max-width:1280px){
+@media (max-width: 1639px){
+    .card{
+        width: 1400px;
+    }
+}
+@media (max-width: 1539px){
+    .card{
+        width: 1000px;
+    }
+}
+@media (max-width:1060px){
     .card{
         position: relative;
         width: auto;
@@ -240,7 +237,7 @@ button:active{
     }
     .card:hover img{
         left: 68%;
-        height: 350px;
+        height: 250px;
     }
     .card .more{
         width: 100%;
@@ -256,7 +253,21 @@ button:active{
         padding: 30px;
     }
     .card:hover img{
-        height: 300px;
+        height: 250px;
+    }
+
+}
+@media (max-width: 375px){
+    .card{
+        left: 3%;
+        width: 350px;
+        top: 5%;
+    }
+    .card .more{
+        padding: 30px;
+    }
+    .card:hover img{
+        height: 250px;
     }
 
 }
@@ -389,10 +400,10 @@ button:active{
 
 }
 .carding:nth-child(1) .text{
-    background: #ff0461;
+    background: rgb(250, 64, 7);
 }
 .carding:nth-child(2) .text{
-    background: chartreuse;
+    background: rgb(67, 176, 209);
 
 }
 .carding:nth-child(3) .text{
@@ -452,7 +463,18 @@ svg circle:nth-child(2){
 .carding:nth-child(6) svg circle:nth-child(2){
     stroke-dashoffset: calc(440px - (440px * 50) / 100);
 }
-
+@media(max-width: 897px){
+    .container .carding{
+        position: relative;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        z-index: 10;
+        margin: 20px 20px 60px;
+        transition: 0.5s;
+    }
+ 
+}
 .fifthsec{
     font-family: Arial;
     height: 100vh;
@@ -509,15 +531,15 @@ div.category button{
 
 @media (max-width: 1991px){
     .itembox img{
-        width: 300px;
+        width: 100px;
     }
 }
-@media only screen and (max-width: 1672px){
-    .fifthsec{
+@media (max-width: 900px){
+ .fifthsec{
         height: 151vh;
     }
     .product div img{
-        width: 200px;
+        width: 100px;
         height: 100px;}
 
     div.itembox img{
@@ -633,7 +655,7 @@ div.category button{
     .testimonials .cards{
         width: 307px;
         height: 444px;
-        left: -5%;
+        left: 5%;
     }
     .testimonials .cards .contents p{
         font-size: 10px;
