@@ -499,7 +499,7 @@ svg circle:nth-child(2){
     .cont h1{
         font-size: 31px;
         position: absolute;
-        left: 3%;
+        left: 31%;
         margin-top: -300px;
 
     }
@@ -520,7 +520,7 @@ svg circle:nth-child(2){
     margin-top: -20px;
 }
 div.menu{
-    margin: 20px;
+    
     padding-left: 9%;
 }
 div.category button{
@@ -533,7 +533,7 @@ div.category button{
     color: rgba(114, 114, 114);
     text-transform: uppercase;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 0px;
     background-color: rgba(223, 223, 223);
 }
 .services h1{
@@ -550,7 +550,7 @@ div.category button{
 .product {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+    
 }
 .product div{
     width: 500px;
@@ -576,7 +576,7 @@ div.category button{
 }
 @media (max-width: 900px){
  .fifthsec{
-        height: 151vh;
+        height: 100%;
     }
     .product div img{
         width: 10px;
@@ -602,9 +602,13 @@ div.category button{
     }
 }
 @media (max-width: 400px){
+    .services h1{
+        font-size: 31px;
+        margin-top: 17px;
+    }
     .product{
-        width: 242px;
-        left: 65px;
+        width: 300px;
+        left: 39px;
     }
 }
 

@@ -29,6 +29,11 @@ nav{
     align-items: center;
     min-height: 8vh;
     font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
   
 }
 
