@@ -185,7 +185,7 @@ button:active{
 .card:hover .more{
     opacity: 1;
     visibility: visible;
-    left: 0%;
+    left: 4%;
 }
 
 .card .more h2{
@@ -252,8 +252,12 @@ button:active{
     .card .more{
         padding: 30px;
     }
+    .card:hover .more{
+        left: -5%;
+    }
     .card:hover img{
         height: 250px;
+        
     }
 
 }
@@ -299,10 +303,10 @@ button:active{
 .fourthsec::before{
     content: '';
     position: absolute;
-    top: 31%;
+    top: 49%;
     left: 0;
     width: 100%;
-    height: 50px;
+    height:14px;
     background: #bd00ff;
 }
 .container{
@@ -483,7 +487,7 @@ svg circle:nth-child(2){
         font-size: 54px;
         position: absolute;
         left: 3%;
-        margin-top: -293px;
+        margin-top: -414px;
 
     }
     .text{
@@ -492,6 +496,13 @@ svg circle:nth-child(2){
 
 }
 @media (max-width: 375px){
+    .cont h1{
+        font-size: 31px;
+        position: absolute;
+        left: 3%;
+        margin-top: -300px;
+
+    }
     .container .carding{
         width: 90px;
         height: 90px;
@@ -505,7 +516,7 @@ svg circle:nth-child(2){
     font-family: Arial;
     height: 100vh;
     box-sizing: border-box;
-    background: #000000;
+    background:  #350048;
     margin-top: -20px;
 }
 div.menu{
@@ -539,6 +550,7 @@ div.category button{
 .product {
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
 }
 .product div{
     width: 500px;
@@ -586,7 +598,13 @@ div.category button{
     .product div {
         width: 100%;
         height: 100%;
-        margin: 10px;
+        margin: 1px;
+    }
+}
+@media (max-width: 400px){
+    .product{
+        width: 242px;
+        left: 65px;
     }
 }
 
@@ -597,7 +615,7 @@ div.category button{
     align-items: center;
     min-height: 100vh;
     box-sizing: border-box;
-    background: #000000;
+    background: #350048;
     
 }
 
@@ -622,7 +640,7 @@ div.category button{
 }
 .testimonials .cards{
     position: relative;
-    left: 20%;
+    left: 22%;
     width: 50%;
     margin: 0 20px;
     background: #333;
@@ -637,7 +655,7 @@ div.category button{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #350048;
+    background: #000000;
     z-index: 1;
     transition: 0.5s;
 }
@@ -672,12 +690,12 @@ div.category button{
     color: #fff;
 }
 .testimonials .cards .contents h2 span{
-    color: #03a9f4;
+    color: #350048;
     font-size: 14px;
     transition: 0.5s;
 }
 .testimonials .cards:hover .contents h2 span{
-    color: #fff;
+    color: #bd00ff;
 } 
 @media (max-width: 400px){
     .testimonials .cards{
@@ -700,7 +718,7 @@ div.category button{
     justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
-    background: #000000;
+    background: #350048;
 }
 .contained{
     width: 90%;
@@ -784,9 +802,13 @@ button[type="submit"]:hover{
         pointer-events: all;
     }
 }
+@media (max-width: 375px){
+    
+
+}
 
 footer{
-    background-color: #350048;
+    background-color: #000000;
 }
 footer img{
     width: 100px;
