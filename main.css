@@ -376,7 +376,7 @@ button:active{
     }
 
 }
-@media(max-width: 414px){
+@media(max-width: 415px){
     .card{
         left: 2%;
     }
@@ -615,7 +615,7 @@ svg circle:nth-child(2){
     }
 
 }
-@media(max-width: 414px){
+@media(max-width: 415px){
     .container .carding{
         left: 4%;
     }
@@ -735,7 +735,7 @@ div.category button{
         margin: 1px;
     }
 }
-@media (max-width: 414px){
+@media (max-width: 415px){
     div.menu{
         padding-left: 15%;
         
@@ -844,7 +844,7 @@ div.category button{
         margin-top: 7%;
     }
 }
-@media (max-width: 414px){
+@media (max-width: 415px){
     .testimonials .cards{
         width: 273px;
         height: 422px;
@@ -949,7 +949,7 @@ button[type="submit"]:hover{
         pointer-events: all;
     }
 }
-@media (max-width: 414px){
+@media (max-width: 415px){
     .contained{
         max-width: 328px;
     }
