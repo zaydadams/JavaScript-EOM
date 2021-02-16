@@ -82,7 +82,7 @@ nav{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 76vh;
         top: 15vh;
         background-color: #49BCFF;
         display: flex;
@@ -129,7 +129,7 @@ nav{
 }
 
 
-.firstsec{
+#firstsec{
     background-image: url(./images/fractals.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -239,7 +239,7 @@ button:active{
         margin: 0px 10px;
     }
 }
-.secondsec{
+#secondsec{
     background-color: #000000;
     margin: 0px;
     top: 0;
@@ -377,6 +377,9 @@ button:active{
 
 }
 @media(max-width: 415px){
+    #secondsec{
+        height: 120vh;
+    }
     .card{
         left: 2%;
     }
@@ -396,7 +399,7 @@ button:active{
 
 }
 
-.thirdsec{
+#thirdsec{
     position: relative;
     width: 100%;
     padding: 0px;
@@ -406,7 +409,7 @@ button:active{
 }
 
 
-.fourthsec{
+#fourthsec{
     
     position: relative;
     display: flex;
@@ -420,7 +423,7 @@ button:active{
     
     
 }
-.fourthsec::before{
+#fourthsec::before{
     content: '';
     position: absolute;
     top: 49%;
@@ -435,7 +438,7 @@ button:active{
     flex-wrap: wrap;
     
 }
-.cont h1{
+#cont h1{
     font-size: 54px;
     position: absolute;
     left: 10%;
@@ -589,7 +592,7 @@ svg circle:nth-child(2){
     stroke-dashoffset: calc(440px - (440px * 50) / 100);
 }
 @media(max-width: 1280px){
-    .fourthsec{
+    #fourthsec{
         margin-top: -15%;
     }
 
@@ -603,7 +606,7 @@ svg circle:nth-child(2){
         height: 150px;
         
     }
-    .cont h1{
+    #cont h1{
         font-size: 54px;
         position: absolute;
         left: 3%;
@@ -619,12 +622,14 @@ svg circle:nth-child(2){
     .container .carding{
         left: 4%;
     }
-    .cont h1{
+    #cont h1{
         font-size: 31px;
+        margin-top: -86%;
+        left: 32%;
     }
 }
 @media (max-width: 375px){
-    .cont h1{
+    #cont h1{
         font-size: 31px;
         position: absolute;
         left: 31%;
@@ -641,7 +646,7 @@ svg circle:nth-child(2){
 
 }
 
-.fifthsec{
+#fifthsec{
     font-family: Arial;
     height: 100vh;
     box-sizing: border-box;
@@ -665,7 +670,7 @@ div.category button{
     border-radius: 0px;
     background-color: rgba(223, 223, 223);
 }
-.services h1{
+#services h1{
     font-size: 54px;
     font-family: fantasy;
     color: #fff;
@@ -709,7 +714,7 @@ div.category button{
     }
 }
 @media (max-width: 900px){
- .fifthsec{
+ #fifthsec{
         height: 100%;
     }
     .product div img{
@@ -740,9 +745,10 @@ div.category button{
         padding-left: 15%;
         
     }
-    .services h1{
+    #services h1{
         font-size: 31px;
         margin-top: 44px;
+        padding-left: 61px;
     }
     .product{
         width: 300px;
@@ -750,7 +756,7 @@ div.category button{
     }
 }
 
-.sixthsec{
+#sixthsec{
     
     display: flex;
     justify-content: center; 
@@ -857,7 +863,7 @@ div.category button{
     }
 }
 
-.seventhsec{
+#seventhsec{
     height: 100%;
     width: 100%;
     display: flex;
