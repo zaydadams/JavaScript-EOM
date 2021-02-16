@@ -1,4 +1,4 @@
-@import url("./main.css");
+
 body{
     
     background-color: #f6f5f5;
@@ -13,6 +13,121 @@ body{
         font-size: 20px;
     }
 }
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+  
+}
+
+.logo{
+    color: rgb(226, 226,226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: rgb(226, 226,226);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-links a:hover{
+    color: #bd00ff;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226,226);
+    margin: 5px;
+    transition: all 0.3s ease;
+
+}
+/*responsive nav */
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+@media screen and (max-width:750px){
+    body {
+        overflow-x: hidden;
+        position: relative;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 15vh;
+        background-color: #49BCFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 5;
+    }
+    .nav-links li{
+        opacity: 1;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 1;
+        transform: translateX();
+    }
+    to{
+        opacity: 2;
+        transform: translateX(0px);
+       
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
 
 .firstsec{
     background-image: url(./images/fractals.jpg);
@@ -504,9 +619,10 @@ svg circle:nth-child(2){
 
     }
     .container .carding{
-        width: 90px;
-        height: 90px;
-        padding: 42px 70px 62px;
+        width: 103px;
+        height: 0px;
+        padding: 27px 9px 71px;
+        left: 8%;
         
     }
 
@@ -703,13 +819,13 @@ div.category button{
 } 
 @media (max-width: 400px){
     .testimonials .cards{
-        width: 307px;
-        height: 444px;
-        left: 5%;
+        width: 273px;
+        height: 422px;
+        left: -3%;
     }
     .testimonials .cards .contents p{
-        font-size: 10px;
-        margin-top: -26%;
+        font-size: 13px;
+        margin-top: -7%;
         padding: 0%;
     }
 }
@@ -732,7 +848,7 @@ div.category button{
     box-sizing: 0px 0px 20px #000010;
     background-color:  rgba(114, 114, 114);
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .form-group{
@@ -807,6 +923,9 @@ button[type="submit"]:hover{
     }
 }
 @media (max-width: 375px){
+    .contained{
+        margin-top: 121px;
+        width: 267px;
     
 
 }
