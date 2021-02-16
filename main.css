@@ -376,6 +376,11 @@ button:active{
     }
 
 }
+@media(max-width: 414px){
+    .card{
+        left: 2%;
+    }
+}
 @media (max-width: 375px){
     .card{
         left: 3%;
@@ -610,6 +615,14 @@ svg circle:nth-child(2){
     }
 
 }
+@media(max-width: 414px){
+    .container .carding{
+        left: 4%;
+    }
+    .cont h1{
+        font-size: 31px;
+    }
+}
 @media (max-width: 375px){
     .cont h1{
         font-size: 31px;
@@ -690,6 +703,11 @@ div.category button{
         width: 100px;
     }
 }
+@media (max-width: 1280px){
+    .itembox img{
+        width: 100px;
+    }
+}
 @media (max-width: 900px){
  .fifthsec{
         height: 100%;
@@ -717,7 +735,11 @@ div.category button{
         margin: 1px;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 414px){
+    div.menu{
+        padding-left: 15%;
+        
+    }
     .services h1{
         font-size: 31px;
         margin-top: 44px;
@@ -817,11 +839,16 @@ div.category button{
 .testimonials .cards:hover .contents h2 span{
     color: #bd00ff;
 } 
-@media (max-width: 400px){
+@media(max-width: 1280px){
+    .testimonials .cards{
+        margin-top: 7%;
+    }
+}
+@media (max-width: 414px){
     .testimonials .cards{
         width: 273px;
         height: 422px;
-        left: -3%;
+        left: 2%;
     }
     .testimonials .cards .contents p{
         font-size: 13px;
@@ -922,17 +949,15 @@ button[type="submit"]:hover{
         pointer-events: all;
     }
 }
+@media (max-width: 414px){
+    .contained{
+        max-width: 328px;
+    }
+}
 @media (max-width: 375px){
     .contained{
         margin-top: 121px;
         width: 267px;
-    
+    }
 
-}
-
-footer{
-    background-color: #000000;
-}
-footer img{
-    width: 100px;
 }
