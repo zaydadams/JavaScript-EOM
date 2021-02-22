@@ -294,7 +294,7 @@ button:active {
 		left: 5%;
 	}
 }
-@media (max-width: 1639px) {
+@media (max-width: 1640px) {
 	.card {
 		width: 1400px;
 	}
