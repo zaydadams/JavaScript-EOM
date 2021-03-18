@@ -348,7 +348,7 @@ button:active {
 }
 @media (max-width: 375px) {
 	.card {
-		left: 3%;
+		left: 2%;
 		width: 350px;
 		top: 5%;
 	}
@@ -553,8 +553,8 @@ svg circle:nth-child(2) {
 	}
 }
 @media(max-width: 415px) {
-	.container .carding {
-		left: 4%;
+	.container .carding .boxing{
+		left: -6%;
 	}
 	#cont h1 {
 		font-size: 31px;
@@ -665,17 +665,18 @@ div.category button {
 }
 @media (max-width: 415px) {
 	div.menu {
-		padding-left: 15%;
+		padding-left: 10%;
 	}
 	#services h1 {
 		font-size: 31px;
 		margin-top: 44px;
 		padding-left: 61px;
 	}
-	.product {
+	.product .itembox{
 		width: 300px;
 		left: 39px;
 	}
+	
 }
 #sixthsec {
 	display: flex;
@@ -763,9 +764,9 @@ div.category button {
 }
 @media (max-width: 415px) {
 	.testimonials .cards {
-		width: 273px;
+		width: 262px;
 		height: 422px;
-		left: 2%;
+		left: -3%;
 	}
 	.testimonials .cards .contents p {
 		font-size: 13px;

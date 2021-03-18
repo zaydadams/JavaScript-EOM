@@ -2,6 +2,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background: #350048;
+	
 }
 nav {
 	display: flex;
@@ -108,10 +109,32 @@ nav {
 .toggle .line3 {
 	transform: rotate(45deg) translate(-5px, -6px);
 }
-section {
+.sectionone{
+	margin-top: 0;
+	padding: 0;
 	height: 100vh;
 }
-section h1 {
+.sectionone h1 {
 	font-size: 30px;
-	margin: 0;
+	margin: 60px;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+.boxing{
+	display: flex;
+	box-sizing: border-box;
+	justify-content: center;
+	margin: 0 30% 0 30%;
+	box-shadow: 1px 8px 16px 8px rgba(255, 249, 249, 0.911);
+
+}
+
+.box{
+	justify-content: center;
+	margin: 0 11% 34px 11%;
+	color: #fff;
+	
 }
