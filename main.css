@@ -29,6 +29,8 @@ nav {
 	letter-spacing: 5px;
 	font-size: 20px;
 	cursor: pointer;
+	position: relative;
+	z-index: -100;
 }
 .nav-links {
 	display: flex;
@@ -76,7 +78,7 @@ nav {
 		right: 0px;
 		height: 76vh;
 		top: 15vh;
-		background-color: #49BCFF;
+		background-color: #bd00ff;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -115,6 +117,7 @@ nav {
 .toggle .line3 {
 	transform: rotate(45deg) translate(-5px, -6px);
 }
+/*background image*/
 #firstsec {
 	background-image: url(./images/fractals.jpg);
 	background-repeat: no-repeat;
@@ -212,11 +215,64 @@ button:active {
 		margin: 0px 10px;
 	}
 }
+@media (max-width: 1280px) {
+	.text-container p:nth-child(1) {
+		font-size: 40px;
+		color: white;
+	}
+	.text-container p:nth-child(2) {
+		font-size: 60px;
+		line-height: 1;
+	}
+	.text-container p:nth-child(3) {
+		color: white;
+        font-size: 40px;
+	}
+	.text-container p {
+		line-height: 0px;
+		margin: 45px 0px 25px;
+	}
+}
+@media (max-width: 800px) {
+	.text-container p:nth-child(1) {
+		font-size: 30px;
+		color: white;
+	}
+	.text-container p:nth-child(2) {
+		font-size: 40px;
+		line-height: 1;
+	}
+	.text-container p:nth-child(3) {
+		color: white;
+        font-size: 20px;
+	}
+	.text-container p {
+		line-height: 0px;
+		margin: 45px 0px 25px;
+	}
+}
+.social{
+	position: fixed;
+	box-sizing: border-box;
+	width: 78px;
+	height: 32px;
+	background: #bd00ff;
+	top: 89%;
+	border-radius: 0px 10px 10px 0px;
+	z-index: 100;
+}
+.social img{
+	width: 30px;
+	margin-left: 4px;
+	margin-top: 1px;
+	
+}
+/* the second section*/
 #secondsec {
 	background-color: #000000;
 	margin: 0px;
 	top: 0;
-	height: 100vh;
+	height: 120vh;
 }
 .hoverover h1 {
 	color: #fff;
@@ -230,15 +286,16 @@ button:active {
 }
 .card {
 	position: relative;
-	width: 1870px;
 	height: 449px;
 	margin: 0px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	align-content: center;
 	border-radius: 20px;
 	background: linear-gradient(135deg, #392277, #751e75);
-	left: 1.2%;
+	left: 1%;
+	margin-right: 2%;
 	margin-top: 0;
 	bottom: -230px;
 }
@@ -266,17 +323,17 @@ button:active {
 .card:hover .more {
 	opacity: 1;
 	visibility: visible;
-	left: 4%;
+	left: 7%;
 }
 .card .more h2 {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 2.5em;
 	line-height: 1em;
 }
 .card .more p {
 	color: #fff;
-	font-size: 1em;
+	font-size: 23px;
 }
 .card .more a {
 	position: relative;
@@ -288,46 +345,71 @@ button:active {
 	margin-top: 10px;
 	text-decoration: none;
 }
-@media (max-width: 1900px) {
+@media (min-width: 2500px) {
 	.card {
-		width: 1500px;
-		left: 5%;
-	}
-}
-@media (max-width: 1640px) {
-	.card {
-		width: 1400px;
-	}
-}
-@media (max-width: 1539px) {
-	.card {
-		width: 1000px;
-	}
-}
-@media (max-width:1060px) {
-	.card {
-		position: relative;
-		width: auto;
-		max-width: 400px;
-		align-items: flex-start;
-	}
-	.card:hover {
-		height: 600px;
-	}
-	.card:hover img {
-		left: 68%;
-		height: 250px;
-	}
-	.card .more {
 		width: 100%;
-		left: 0;
-		padding: 40px;
+        left: 2%;
+        right: 2%;
+		
 	}
 }
+@media (max-width: 1500px){
+    .card{
+    position: relative;
+	height: 449px;
+	margin: 0px;
+	left: 1%;
+	margin-right: 2%;
+	margin-top: 0;
+	bottom: -90px;
+    }
+    .card .more {
+        position: relative;
+        width: 50%;
+        left: 20%;
+        padding: 20px 20px 20px 40px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+    .card:hover .more {
+        opacity: 1;
+        visibility: visible;
+        left: 2%;
+    }
+    .card .more h2 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .card .more p {
+        color: #fff;
+        font-size: 15px;
+    }
+    .card:hover img{
+        left: 80%;
+    }
+    .card .more a {
+        padding: 5px 10px;
+        border-radius: 10px;
+        
+        margin-top: 10px;
+        
+    }
+}
+@media(max-width: 1000px){
+    .card:hover img{
+        width: 300px;
+        height: 100%;
+    }
+}
+
 @media (max-width: 570px) {
-	.card {
-		left: 12%;
-	}
+    .card:hover{
+        height: 600px;
+        top: 2%;
+    }
 	.card .more {
 		padding: 30px;
 	}
@@ -335,38 +417,50 @@ button:active {
 		left: -5%;
 	}
 	.card:hover img {
-		height: 250px;
+		height: 300px;
+        width: 180px;
+        left: 75%;
 	}
 }
 @media(max-width: 415px) {
-	#secondsec {
-		height: 120vh;
-	}
 	.card {
-		left: 2%;
+        height: 555px;
+		
 	}
+    .card:hover{
+        height: 700px;
+    }
 }
-@media (max-width: 375px) {
-	.card {
-		left: 2%;
-		width: 350px;
-		top: 5%;
-	}
-	.card .more {
-		padding: 30px;
-	}
-	.card:hover img {
-		height: 250px;
-	}
+
+/*Iphone 5*/
+@media(max-width: 320px){
+    .card{
+        width: 300px;
+        height: 300px;
+        margin-left: 2%;
+        margin-top: 0;
+        bottom: -90px;
+    }
+    .card:hover{
+        height: 580px;
+    }
+    .card .more h2 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .card .more p {
+        color: #fff;
+        font-size: 12px;
+    }
+    .card:hover img{
+        left: 75%;
+        
+    }
 }
+
 #thirdsec {
-	position: relative;
-	width: 100%;
-	padding: 0px;
-	height: 100vh;
-	box-sizing: border-box;
-}
-#fourthsec {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -374,10 +468,9 @@ button:active {
 	padding: 40px 0;
 	min-height: 100vh;
 	background: #350048;
-	margin-top: -4%;
 	height: 100vh;
 }
-#fourthsec::before {
+#thirdsec::before {
 	content: '';
 	position: absolute;
 	top: 49%;
@@ -390,6 +483,8 @@ button:active {
 	width: 900px;
 	display: flex;
 	flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 9%;
 }
 #cont h1 {
 	font-size: 54px;
@@ -454,7 +549,7 @@ button:active {
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
-	padding: 30px 20px 10px;
+	padding: 17px 20px 10px;
 	background-attachment: #f00;
 	border-radius: 10px;
 	font-weight: 800px;
@@ -476,21 +571,27 @@ button:active {
 }
 .carding:nth-child(1) .text {
 	background: rgb(250, 64, 7);
+    z-index: 22;
 }
 .carding:nth-child(2) .text {
 	background: rgb(67, 176, 209);
+    z-index: 22;
 }
 .carding:nth-child(3) .text {
 	background: cornflowerblue;
+    z-index: 22;
 }
 .carding:nth-child(4) .text {
 	background: darkblue;
+    z-index: 22;
 }
 .carding:nth-child(5) .text {
 	background: darkgoldenrod;
+    z-index: 22;
 }
 .carding:nth-child(6) .text {
 	background: darkgreen;
+    z-index: 22;
 }
 svg {
 	position: relative;
@@ -529,10 +630,28 @@ svg circle:nth-child(2) {
 .carding:nth-child(6) svg circle:nth-child(2) {
 	stroke-dashoffset: calc(440px - (440px * 50) / 100);
 }
-@media(max-width: 1280px) {
-	#fourthsec {
-		margin-top: -15%;
-	}
+
+@media(max-width: 1366px){
+    #fourthsec{
+    padding: 154px 0;
+	min-height: 100vh;
+	background: #350048;
+	margin-top: -4%;
+	height: 100vh;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        }
+    .container .carding .boxing{
+        width: 70%;
+        height: 70%;
+    }
+    
+
 }
 @media (max-width: 867px) {
 	.container {
@@ -545,11 +664,9 @@ svg circle:nth-child(2) {
 	#cont h1 {
 		font-size: 54px;
 		position: absolute;
-		left: 3%;
-		margin-top: -414px;
 	}
 	.text {
-		padding: 32px 14px 3px;
+		padding: 17px 14px 3px;
 	}
 }
 @media(max-width: 415px) {
@@ -558,16 +675,14 @@ svg circle:nth-child(2) {
 	}
 	#cont h1 {
 		font-size: 31px;
-		margin-top: -86%;
-		left: 32%;
 	}
+	
 }
 @media (max-width: 375px) {
 	#cont h1 {
 		font-size: 31px;
 		position: absolute;
-		left: 31%;
-		margin-top: -300px;
+		
 	}
 	.container .carding {
 		width: 103px;
@@ -576,6 +691,7 @@ svg circle:nth-child(2) {
 		left: 8%;
 	}
 }
+
 #fifthsec {
 	font-family: Arial;
 	box-sizing: border-box;
@@ -647,7 +763,7 @@ div.category button {
 		height: 200px;
 	}
 	div.itembox img {
-		width: 100%;
+		width: 300px;
 	}
 	div.category {
 		display: inline-block;
@@ -676,7 +792,11 @@ div.category button {
 		width: 300px;
 		left: 39px;
 	}
-	
+}
+@media (max-width: 320px){
+	#services h1{
+		top: 20%;
+	}
 }
 #sixthsec {
 	display: flex;
@@ -757,12 +877,23 @@ div.category button {
 .testimonials .cards:hover .contents h2 span {
 	color: #bd00ff;
 }
+.testone{
+	font-size: 54px;
+	font-family: fantasy;
+	color: #fff;
+	padding-left: 12px;
+}
 @media(max-width: 1280px) {
 	.testimonials .cards {
 		margin-top: 7%;
 	}
 }
 @media (max-width: 415px) {
+	.testone h1{
+		font-size: 31px;
+		margin-top: 44px;
+		padding-left: 61px;
+	}
 	.testimonials .cards {
 		width: 262px;
 		height: 422px;
@@ -774,6 +905,7 @@ div.category button {
 		padding: 0%;
 	}
 }
+
 #seventhsec {
 	height: 100%;
 	width: 100%;
