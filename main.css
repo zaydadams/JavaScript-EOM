@@ -460,7 +460,7 @@ button:active {
     }
 }
 
-#thirdsec {
+#fourthsec {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -470,7 +470,7 @@ button:active {
 	background: #350048;
 	height: 100vh;
 }
-#thirdsec::before {
+#fourth::before {
 	content: '';
 	position: absolute;
 	top: 49%;
@@ -490,7 +490,7 @@ button:active {
 	font-size: 54px;
 	position: absolute;
 	left: 10%;
-	margin-top: -444px;
+	
 	color: #fff;
 }
 .container .carding {
@@ -635,10 +635,12 @@ svg circle:nth-child(2) {
     #fourthsec{
     padding: 154px 0;
 	min-height: 100vh;
-	background: #350048;
 	margin-top: -4%;
 	height: 100vh;
     }
+	#cont h1{
+		margin: 0;
+	}
     .container{
         width: 100%;
         display: flex;
@@ -681,6 +683,7 @@ svg circle:nth-child(2) {
 @media (max-width: 375px) {
 	#cont h1 {
 		font-size: 31px;
+		margin-top: -115%;
 		position: absolute;
 		
 	}
@@ -693,7 +696,6 @@ svg circle:nth-child(2) {
 }
 
 #fifthsec {
-	font-family: Arial;
 	box-sizing: border-box;
 	background: #350048;
 	margin-top: -45px;
@@ -716,7 +718,6 @@ div.category button {
 }
 #services h1 {
 	font-size: 54px;
-	font-family: fantasy;
 	color: #fff;
 	padding-left: 12px;
 }
@@ -753,6 +754,7 @@ div.category button {
 	.itembox img {
 		width: 100px;
 	}
+	
 }
 @media (max-width: 900px) {
 	#fifthsec {
@@ -786,7 +788,7 @@ div.category button {
 	#services h1 {
 		font-size: 31px;
 		margin-top: 44px;
-		padding-left: 61px;
+		
 	}
 	.product .itembox{
 		width: 300px;
@@ -877,9 +879,8 @@ div.category button {
 .testimonials .cards:hover .contents h2 span {
 	color: #bd00ff;
 }
-.testone{
+.testone h1{
 	font-size: 54px;
-	font-family: fantasy;
 	color: #fff;
 	padding-left: 12px;
 }
@@ -892,7 +893,8 @@ div.category button {
 	.testone h1{
 		font-size: 31px;
 		margin-top: 44px;
-		padding-left: 61px;
+		margin-left: 8%;
+		
 	}
 	.testimonials .cards {
 		width: 262px;
